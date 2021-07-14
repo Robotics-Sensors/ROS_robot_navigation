@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~fps" : \b [int] update rate of the detection min: 0, default: 10, max: 50
+- \b "~p_detection" : \b [double] probability that a cone will be detected min: 0.0, default: 0.7, max: 1.0
+- \b "~sig_range" : \b [double] Scale of measurement range noise min: 0.0, default: 1.0, max: 10.0
+- \b "~sig_bearing" : \b [double] Scale of measurement bearing noise min: 0.0, default: 1.0, max: 10.0
+- \b "~sig_correlation" : \b [double] Scale of the correlation between range and measurement noise min: 0.0, default: 1.0, max: 10.0
+

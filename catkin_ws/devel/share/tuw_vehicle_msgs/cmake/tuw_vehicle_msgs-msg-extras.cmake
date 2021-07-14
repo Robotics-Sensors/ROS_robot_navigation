@@ -1,0 +1,1 @@
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_vehicle_msgs/share/tuw_vehicle_msgs/cmake/tuw_vehicle_msgs-msg-extras.cmake

@@ -1,0 +1,1 @@
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/share/gennodejs/ros/robot_navigation/msg/_index.js

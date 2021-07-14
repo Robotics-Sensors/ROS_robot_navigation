@@ -1,0 +1,7 @@
+set(tuw_gazebo_plugins_SETUP_PY_SETUP_MODULE "distutils.core")
+set(tuw_gazebo_plugins_SETUP_PY_VERSION "0.0.0")
+set(tuw_gazebo_plugins_SETUP_PY_SCRIPTS "")
+set(tuw_gazebo_plugins_SETUP_PY_PACKAGES "gazebo_plugins")
+set(tuw_gazebo_plugins_SETUP_PY_PACKAGE_DIRS "src/gazebo_plugins")
+set(tuw_gazebo_plugins_SETUP_PY_MODULES "")
+set(tuw_gazebo_plugins_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,77 @@
+<launch>
+  <!-- This launch file includes the setup_test launch file and sets the parameters needed to launch
+  the level3 world. -->
+
+  <!-- Determine whether the robot is physical or simulated-->
+  <arg name="sim" default="true" />
+
+  <!-- If in sim, enable gazebo gui or not -->
+  <arg name="gui" default="true" />
+
+  <!-- Use 3d or 2d navigation -->
+  <arg name="3d" default="true" />
+
+  <!-- Use the static global map while navigating -->
+  <arg name="static_map" default="true" />
+  
+  <!-- Name and type of robot being spawned in -->
+  <arg name="robot" default="fetch" />
+
+  <!-- Define map settings-->
+  <arg name="world_name" value="level3" />
+  <arg name="world_path" value="$(arg world_name)" />
+  
+  <!-- Determine whether an obstacle robot should be spawned in -->
+  <arg name="obstacle_bot" default="false" />
+
+  <!-- Determine whether a dynamic obstacle should be spawned in -->
+  <arg name="dynamic_obstacle" default="false" />
+
+  <!-- Name of dynamic obstacle that will be spawned in if needed -->
+  <arg name="obstacle_name" default="caution_100cm_block" />
+
+  <!-- Flip obstacle spawner -->
+  <arg name="flip_obstacle" default="true" />
+
+  <!-- Start test -->
+  <arg name="start_test" default="true" />
+
+  <!-- number of iterations the robot will perform -->
+  <arg name="iterations" default="1" /> 
+    
+  <!-- toggle whether the robot should clear the costmaps in between iterations -->
+  <arg name="clear_costmaps" default="true" /> 
+
+  <!-- Set up the test -->
+  <include file="$(find robot_navigation)/launch/setup_test.launch" unless="$(arg start_test)">
+    <arg name="sim" value="$(arg sim)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="3d" value="$(arg 3d)" />
+    <arg name="static_map" value="$(arg static_map)" />
+    <arg name="robot" value="$(arg robot)" />
+    <arg name="world_name" value="$(arg world_name)" />
+    <arg name="world_path" value="$(arg world_path)" />
+    <arg name="obstacle_bot" value="$(arg obstacle_bot)" />
+    <arg name="dynamic_obstacle" value="$(arg dynamic_obstacle)" />
+    <arg name="obstacle_name" value="$(arg obstacle_name)" />
+    <arg name="flip_obstacle" value="$(arg flip_obstacle)" />
+  </include>
+
+  <!-- Run the test if wanted -->
+  <include file="$(find robot_navigation)/launch/run_test.launch" if="$(arg start_test)">
+    <arg name="sim" value="$(arg sim)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="3d" value="$(arg 3d)" />
+    <arg name="static_map" value="$(arg static_map)" />
+    <arg name="robot" value="$(arg robot)" />
+    <arg name="world_name" value="$(arg world_name)" />
+    <arg name="world_path" value="$(arg world_path)" />
+    <arg name="obstacle_bot" value="$(arg obstacle_bot)" />
+    <arg name="dynamic_obstacle" value="$(arg dynamic_obstacle)" />
+    <arg name="obstacle_name" value="$(arg obstacle_name)" />
+    <arg name="flip_obstacle" value="$(arg flip_obstacle)" />
+    <arg name="iterations" value="$(arg iterations)" />
+    <arg name="clear_costmaps" value="$(arg clear_costmaps)" /> 
+  </include>
+
+</launch>

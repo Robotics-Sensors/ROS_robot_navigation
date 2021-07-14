@@ -1,0 +1,1 @@
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_waypoint_to_spline_msgs/share/tuw_waypoint_to_spline_msgs/cmake/tuw_waypoint_to_spline_msgsConfig-version.cmake

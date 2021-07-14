@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~map_offset_x" : \b [double] motion_noise 0 min: -200.0, default: 0.0, max: 200.0
+- \b "~map_offset_y" : \b [double] motion_noise 0 min: -200.0, default: 0.0, max: 200.0
+- \b "~map_offset_angle" : \b [double] motion_noise 0 min: -3.15, default: 0.0, max: 3.15
+

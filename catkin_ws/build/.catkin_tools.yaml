@@ -1,0 +1,6 @@
+devel_space: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel
+install: false
+install_space: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/install
+profile: default
+source_space: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src
+workspace: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws

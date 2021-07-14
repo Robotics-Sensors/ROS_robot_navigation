@@ -1,0 +1,1 @@
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_airskin_msgs/lib/python2.7/dist-packages/tuw_airskin_msgs/msg/_AirskinInfo.py

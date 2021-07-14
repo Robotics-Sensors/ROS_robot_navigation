@@ -1,0 +1,8 @@
+prefix=/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_local_controller_msgs
+
+Name: tuw_local_controller_msgs
+Description: Description of tuw_local_controller_msgs
+Version: 0.0.0
+Cflags: -I/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_local_controller_msgs/include
+Libs: -L${prefix}/lib 
+Requires: 

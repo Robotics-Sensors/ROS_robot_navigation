@@ -1,0 +1,8 @@
+prefix=/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_gazebo_plugins
+
+Name: tuw_gazebo_plugins
+Description: Description of tuw_gazebo_plugins
+Version: 0.0.0
+Cflags: -I/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_gazebo_plugins/include -I/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/tuw_gazebo/tuw_gazebo_plugins/include
+Libs: -L${prefix}/lib -ltuw_gazebo_ros_utils -ltuw_gazebo_ros_diff_drive -ltuw_gazebo_ros_imu9dof -ltuw_gazebo_ros_bridge_model -ltuw_gazebo_ros_door_plugin
+Requires: 

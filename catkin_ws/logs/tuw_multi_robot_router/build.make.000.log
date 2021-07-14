@@ -1,0 +1,152 @@
+[35m[1mScanning dependencies of target tuw_multi_robot_router_gencfg[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[  4%] [34m[1mGenerating dynamic reconfigure files from cfg/router.cfg: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_router/include/tuw_multi_robot_router/routerConfig.h /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_router/lib/python2.7/dist-packages/tuw_multi_robot_router/cfg/routerConfig.py[0m
+[  4%] Built target roscpp_generate_messages_eus
+[35m[1mScanning dependencies of target tuw_multi_robot_msgs_generate_messages_py[0m
+[  4%] Built target tuw_multi_robot_msgs_generate_messages_py
+[35m[1mScanning dependencies of target tuw_multi_robot_msgs_generate_messages_nodejs[0m
+[  4%] Built target tuw_multi_robot_msgs_generate_messages_nodejs
+Generating reconfiguration files for router in tuw_multi_robot_router
+Wrote header file in /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_router/include/tuw_multi_robot_router/routerConfig.h
+[35m[1mScanning dependencies of target tuw_multi_robot_msgs_generate_messages_lisp[0m
+[  4%] Built target tuw_multi_robot_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_nodejs[0m
+[  4%] Built target tf2_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_py[0m
+[  4%] Built target tuw_multi_robot_router_gencfg
+[  4%] Built target tf2_msgs_generate_messages_py
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_eus[0m
+[  4%] Built target tf2_msgs_generate_messages_lisp
+[  4%] Built target tf2_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target tuw_multi_robot_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_cpp[0m
+[  4%] Built target tuw_multi_robot_msgs_generate_messages_cpp
+[  4%] Built target tf2_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_generate_messages_py[0m
+[  4%] Built target actionlib_generate_messages_py
+[35m[1mScanning dependencies of target actionlib_generate_messages_nodejs[0m
+[  4%] Built target actionlib_generate_messages_nodejs
+[35m[1mScanning dependencies of target actionlib_generate_messages_lisp[0m
+[  4%] Built target actionlib_generate_messages_lisp
+[35m[1mScanning dependencies of target actionlib_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[  4%] Built target actionlib_generate_messages_eus
+[  4%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target tf_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[  4%] Built target sensor_msgs_generate_messages_cpp
+[  4%] Built target tf_generate_messages_py
+[  4%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target tf_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target tf_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target tf_generate_messages_eus[0m
+[  4%] Built target tf_generate_messages_nodejs
+[  4%] Built target tf_generate_messages_lisp
+[  4%] Built target tf_generate_messages_eus
+[35m[1mScanning dependencies of target tf_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[  4%] Built target rosgraph_msgs_generate_messages_py
+[  4%] Built target tf_generate_messages_cpp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[  4%] Built target rosgraph_msgs_generate_messages_nodejs
+[  4%] Built target rosgraph_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_eus[0m
+[  4%] Built target rosgraph_msgs_generate_messages_eus
+[  4%] Built target std_msgs_generate_messages_nodejs
+[  4%] Built target dynamic_reconfigure_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[  4%] Built target std_msgs_generate_messages_lisp
+[  4%] Built target dynamic_reconfigure_generate_messages_py
+[  4%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_py[0m
+[  4%] Built target std_msgs_generate_messages_py
+[  4%] Built target nav_msgs_generate_messages_py
+[35m[1mScanning dependencies of target dynamic_reconfigure_gencfg[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_nodejs[0m
+[  4%] Built target dynamic_reconfigure_gencfg
+[  4%] Built target dynamic_reconfigure_generate_messages_nodejs
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[  4%] Built target actionlib_generate_messages_cpp
+[  4%] Built target dynamic_reconfigure_generate_messages_lisp
+[  4%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  4%] Built target roscpp_generate_messages_cpp
+[  4%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target tuw_multi_robot_msgs_generate_messages_eus[0m
+[  4%] Built target actionlib_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  4%] Built target tuw_multi_robot_msgs_generate_messages_eus
+[  4%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[  4%] Built target nav_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  4%] Built target dynamic_reconfigure_generate_messages_cpp
+[  4%] Built target rosgraph_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[  4%] Built target sensor_msgs_generate_messages_lisp
+[  4%] Built target geometry_msgs_generate_messages_lisp
+[  4%] Built target roscpp_generate_messages_py
+[  4%] Built target geometry_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[  4%] Built target geometry_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_eus[0m
+[  4%] Built target nav_msgs_generate_messages_cpp
+[  4%] Built target nav_msgs_generate_messages_lisp
+[  4%] Built target roscpp_generate_messages_lisp
+[  4%] Built target nav_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_eus[0m
+[  4%] Built target actionlib_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_lisp[0m
+[  4%] Built target actionlib_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_py[0m
+[  4%] Built target actionlib_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[  4%] Built target actionlib_msgs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[  4%] Built target roscpp_generate_messages_nodejs
+[  4%] Built target geometry_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target tuw_multi_robot_router[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/point_expander.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/router.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/srr_utils.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/multi_robot_router.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/multi_robot_router_threaded_srr.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/single_robot_router.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/segment_expander.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/route_coordinator_timed.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/traceback.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/robot_info.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/route_generator.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/backtracking_resolution.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/avoidance_resolution.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/empty_resolution.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/priority_scheduler.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/potential_calculator.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/speed_scheduler.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router.dir/src/route_coordinator.cpp.o[0m
+[ 90%] [32m[1mLinking CXX shared library /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_router/lib/libtuw_multi_robot_router.so[0m
+[ 90%] Built target tuw_multi_robot_router
+[35m[1mScanning dependencies of target tuw_multi_robot_router_node[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_router_node.dir/src/router_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_router/lib/tuw_multi_robot_router/tuw_multi_robot_router_node[0m
+[100%] Built target tuw_multi_robot_router_node

@@ -1,0 +1,6 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~noise_data" : \b [bool] noised data flag (NOT IMPLEMENTED!) min: False, default: False, max: True
+

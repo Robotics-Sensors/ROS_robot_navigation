@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="tuw_gazebo_plugins" pkg="tuw_gazebo_plugins" type="tuw_gazebo_plugins">
+  <param name="map_offset_x" type="double" value="0.0" />
+  <param name="map_offset_y" type="double" value="0.0" />
+  <param name="map_offset_angle" type="double" value="0.0" />
+</node>
+\endverbatim
+
