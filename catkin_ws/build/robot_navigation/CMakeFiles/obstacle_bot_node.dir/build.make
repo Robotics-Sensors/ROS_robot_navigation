@@ -90,18 +90,24 @@ obstacle_bot_node_EXTERNAL_OBJECTS =
 
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: CMakeFiles/obstacle_bot_node.dir/src/obstacle_bot.cpp.o
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: CMakeFiles/obstacle_bot_node.dir/build.make
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libtf.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libtf2_ros.so
-/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libmessage_filters.so
-/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libtf2.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libactionlib.so
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libmessage_filters.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libroscpp.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libtf2.so
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libcv_bridge.so
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/librosconsole.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libroscpp_serialization.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/librostime.so
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_node: /opt/ros/melodic/lib/libcpp_common.so

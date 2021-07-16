@@ -185,7 +185,7 @@ foreach(t ${robot_navigation_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs;std_srvs;tf2;tf2_ros;geometry_msgs;message_runtime;move_base_msgs;actionlib;gazebo_msgs")
+set(depends "roscpp;rospy;std_msgs;std_srvs;tf2;tf2_ros;geometry_msgs;message_runtime;move_base_msgs;actionlib;gazebo_msgs;tuw_voronoi_graph;tuw_multi_robot_msgs;cv_bridge;dynamic_reconfigure;nav_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

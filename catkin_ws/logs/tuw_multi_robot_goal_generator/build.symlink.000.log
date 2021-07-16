@@ -1,6 +1,0 @@
-Symlinking /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/share/tuw_multi_robot_goal_generator/cmake/tuw_multi_robot_goal_generatorConfig-version.cmake
-Symlinking /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/share/tuw_multi_robot_goal_generator/cmake/tuw_multi_robot_goal_generatorConfig.cmake
-Symlinking /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/lib/pkgconfig/tuw_multi_robot_goal_generator.pc
-Symlinking /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/lib/tuw_multi_robot_goal_generator/goals_random
-Symlinking /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/lib/tuw_multi_robot_goal_generator/goals_server
-Symlinking /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/lib/tuw_multi_robot_goal_generator/goals_saver

@@ -36,7 +36,7 @@ int main(int argc, char** argv)
     po::options_description description("usage");
     description.add_options()
         ("help,h", "Display help message")
-        ("input,i", po::value<std::string>()->default_value("./segments.dxf"), "The path to the file")
+        ("input,i", po::value<std::string>()->default_value("./level2.dxf"), "The path to the file")
         ("output,o", po::value<std::string>()->default_value("./graphs/segments"), "The output directory")
         ("width,w", po::value<float>()->default_value(0.6), "The width of a segments in meters")
         ("length,l", po::value<float>()->default_value(1.0), "The length of a segment in meters");
@@ -58,11 +58,14 @@ int main(int argc, char** argv)
         float length = vm["length"].as<float>();
         float width = vm["width"].as<float>();
         
-     
+        
         std::cout << "\tGenerating Graph from \"" << inpath << "\" with line_width: " << width << " and minimum line_length: " << length << std::endl;
         
+        std::cout <<"testingok" << std::endl;
         tuw_graph::DxfToGraph dxf2graph;
+        std::cout <<"testing1---" << inpath << std::endl;
         dxf2graph.parseGraph(inpath, length, width);
+        std::cout <<"testing2" << length << width << std::endl;
         dxf2graph.serializeGraph(outpath);
         
         std::cout << "\tSaving graph to \"" << outpath << "\"" << std::endl;

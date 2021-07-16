@@ -1,5 +1,3 @@
-<?xml version="1.0"?>
-
 <launch>
   
     <arg name="seg_length" default="0.8" />
@@ -7,5 +5,5 @@
     <arg name="room" default="level1" />
     
     <!-- This node only reads the dxf and stores it a graph in a folder structrue usabe by the graph_generator -->
-    <node pkg="tuw_voronoi_graph" type="tuw_dxf_graph_node" name="dxf_graph_node" args=" -o $(find robot_navigation)/resources/graph/$(arg room)/cache/graph -i $(find robot_navigation)/resources/static_maps/2d/$(arg room).dxf -w $(arg seg_width) -l $(arg seg_length)" output="screen"/>
+    <node pkg="tuw_voronoi_graph" type="tuw_dxf_graph_node" name="dxf_graph_node" args="-o $(find robot_navigation)/resources/graph/$(arg room)/cache/graph/ -i $(find robot_navigation)/resources/2d/$(arg room).dxf -w $(arg seg_width) -l $(arg seg_length)" output="screen"/>
 </launch>

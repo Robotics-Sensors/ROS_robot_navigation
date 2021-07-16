@@ -17,7 +17,7 @@
   <arg name="3d" default="false" />
   
   <!-- Define map settings, values are set in the level launch files-->
-  <arg name="world_path" default="level4.world" />
+  <arg name="world_path" default="level3.world" />
 
   <!-- Determine whether an obstacle robot should be spawned in -->
   <arg name="obstacle_bot" default="true" />

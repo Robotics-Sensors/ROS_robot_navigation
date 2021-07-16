@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(robot_navigation)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++11)
+# add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -18,7 +18,13 @@ find_package(catkin REQUIRED COMPONENTS
   move_base_msgs
   actionlib
   gazebo_msgs
-  # tuw_voronoi_graph
+  tuw_voronoi_graph
+  tuw_multi_robot_msgs
+  nav_msgs
+  cv_bridge
+  dynamic_reconfigure
+  # tf
+  # tuw_multi_robot
 )
 
 ## System dependencies are found with CMake's conventions
@@ -126,8 +132,13 @@ catkin_package(
     move_base_msgs 
     actionlib 
     gazebo_msgs
-    # tuw_voronoi_graph
-    # tuw_dxf_graph_node
+    tuw_voronoi_graph
+    tuw_multi_robot_msgs
+    # tf
+    cv_bridge
+    dynamic_reconfigure
+    nav_msgs
+    # tuw_multi_robot
 #  DEPENDS system_lib
 )
 
