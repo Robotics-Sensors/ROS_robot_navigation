@@ -33,6 +33,7 @@
   </include>
 </group>
 
+
 <!-- graph generator-->
 <group if="$(arg launch_graph_generator)">
   <group if="$(arg load_segments)">
@@ -87,8 +88,8 @@
 <!-- start rviz -->
 <group if="$(arg launch_rviz)">
   <include file="$(find robot_navigation)/launch/rviz.launch">
-    <arg name="config_file" value="$(arg room)"/>
-    <arg name="robot" value="$(arg robot)"/>
+    <arg name="config_file" value="config"/>
+    <!-- <arg name="robot" value="$(arg robot)"/> -->
   </include>
 </group>
 
