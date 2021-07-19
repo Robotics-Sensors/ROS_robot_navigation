@@ -16,7 +16,6 @@ define hokuyolaser ranger
   )
 )
 
-
 define floorplan model
 (
   # sombre, sensible, artistic
