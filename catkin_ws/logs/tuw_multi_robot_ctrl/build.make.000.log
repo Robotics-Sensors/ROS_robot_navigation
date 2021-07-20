@@ -1,0 +1,19 @@
+[35m[1mScanning dependencies of target tuw_multi_robot_msgs_generate_messages_cpp[0m
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target FakePoseEstimationNodelet[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/FakePoseEstimationNodelet.dir/src/fake_pose_estimation_nodelet.cpp.o[0m
+[ 22%] [32m[1mLinking CXX shared library /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_ctrl/lib/libFakePoseEstimationNodelet.so[0m
+[ 22%] Built target FakePoseEstimationNodelet
+[35m[1mScanning dependencies of target tuw_multi_robot_ctrl[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_ctrl.dir/src/controller.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_ctrl.dir/src/segment_controller.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_ctrl/lib/libtuw_multi_robot_ctrl.so[0m
+[ 55%] Built target tuw_multi_robot_ctrl
+[35m[1mScanning dependencies of target local_multi_robot_controller[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/local_multi_robot_controller.dir/src/local_multi_robot_controller_node.cpp.o[0m
+[35m[1mScanning dependencies of target tuw_velocity_controller[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/tuw_velocity_controller.dir/src/local_controller_node.cpp.o[0m
+[ 88%] [32m[1mLinking CXX executable /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_ctrl/lib/tuw_multi_robot_ctrl/local_multi_robot_controller[0m
+[ 88%] Built target local_multi_robot_controller
+[100%] [32m[1mLinking CXX executable /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_ctrl/lib/tuw_multi_robot_ctrl/tuw_velocity_controller[0m
+[100%] Built target tuw_velocity_controller

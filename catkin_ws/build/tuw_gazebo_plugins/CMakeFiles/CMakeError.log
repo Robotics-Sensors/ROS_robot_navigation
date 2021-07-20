@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_898ca/fast"
-/usr/bin/make -f CMakeFiles/cmTC_898ca.dir/build.make CMakeFiles/cmTC_898ca.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_88cbc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_88cbc.dir/build.make CMakeFiles/cmTC_88cbc.dir/build
 make[1]: Entering directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_898ca.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_898ca.dir/CheckSymbolExists.c.o   -c /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_898ca
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_898ca.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_898ca.dir/CheckSymbolExists.c.o  -o cmTC_898ca 
-CMakeFiles/cmTC_898ca.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_88cbc.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_88cbc.dir/CheckSymbolExists.c.o   -c /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_88cbc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88cbc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_88cbc.dir/CheckSymbolExists.c.o  -o cmTC_88cbc 
+CMakeFiles/cmTC_88cbc.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_898ca.dir/build.make:97: recipe for target 'cmTC_898ca' failed
-make[1]: *** [cmTC_898ca] Error 1
+CMakeFiles/cmTC_88cbc.dir/build.make:97: recipe for target 'cmTC_88cbc' failed
+make[1]: *** [cmTC_88cbc] Error 1
 make[1]: Leaving directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_898ca/fast' failed
-make: *** [cmTC_898ca/fast] Error 2
+Makefile:126: recipe for target 'cmTC_88cbc/fast' failed
+make: *** [cmTC_88cbc/fast] Error 2
 
 File /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b27e2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b27e2.dir/build.make CMakeFiles/cmTC_b27e2.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_92aac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92aac.dir/build.make CMakeFiles/cmTC_92aac.dir/build
 make[1]: Entering directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b27e2.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b27e2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_b27e2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b27e2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_b27e2.dir/CheckFunctionExists.c.o  -o cmTC_b27e2 -lpthreads 
+Building C object CMakeFiles/cmTC_92aac.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_92aac.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_92aac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92aac.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_92aac.dir/CheckFunctionExists.c.o  -o cmTC_92aac -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_b27e2.dir/build.make:97: recipe for target 'cmTC_b27e2' failed
-make[1]: *** [cmTC_b27e2] Error 1
+CMakeFiles/cmTC_92aac.dir/build.make:97: recipe for target 'cmTC_92aac' failed
+make[1]: *** [cmTC_92aac] Error 1
 make[1]: Leaving directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_gazebo_plugins/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_b27e2/fast' failed
-make: *** [cmTC_b27e2/fast] Error 2
+Makefile:126: recipe for target 'cmTC_92aac/fast' failed
+make: *** [cmTC_92aac/fast] Error 2
 
 

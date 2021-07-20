@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target tuw_multi_robot_rviz_autogen[0m
+[  8%] [34m[1mAutomatic MOC for target tuw_multi_robot_rviz[0m
+[  8%] Built target tuw_multi_robot_rviz_autogen
+[35m[1mScanning dependencies of target tuw_multi_robot_rviz[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/MultiRobotInfoDisplay.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/MultiRobotInfoVisual.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/RobotGoalsArrayVisual.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/RobotGoalsArrayDisplay.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/VoronoiGraphVisual.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/VoronoiGraphDisplay.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/VoronoiSegmentVisual.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/VoronoiSegmentDisplay.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/src/MultiRobotGoalSelector.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/tuw_multi_robot_rviz.dir/tuw_multi_robot_rviz_autogen/mocs_compilation.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/tuw_multi_robot_rviz/lib/libtuw_multi_robot_rviz.so[0m
+[100%] Built target tuw_multi_robot_rviz

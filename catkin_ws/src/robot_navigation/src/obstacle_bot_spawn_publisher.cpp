@@ -32,9 +32,6 @@ public:
     obstacle_bot_spawn_publisher = node_handle.advertise<geometry_msgs::PoseWithCovarianceStamped>("spawn", 1, true);
   }
 
-  /* void move_obstacle_bot_callback(const sensor_msgs::LaserScan::ConstPtr &message) { */
-  /* } */
-
 
   void spawnning_obstacle_bot() {
     //Construct Spawn message for the obstacle_bot 
@@ -42,7 +39,7 @@ public:
     spawn.pose.pose.position.x = obstacle_bot_x_position;
     spawn.pose.pose.position.y = obstacle_bot_y_position;
     spawn.pose.pose.position.z = 0;
-    quaternion.setRPY( 0, 0, obstacle_bot_z_rotation );
+    quaternion.setRPY( 0, 0, obstacle_bot_z_rotation);
     spawn.pose.pose.orientation.z = quaternion[2];
     spawn.pose.pose.orientation.w = quaternion[3];
 
@@ -51,6 +48,8 @@ public:
     obstacle_bot_spawn_publisher.publish(spawn);
     }
 };
+
+
 int main(int argc, char **argv) {
 
     ros::init(argc, argv, "obstacle_bot_spawn_publisher");

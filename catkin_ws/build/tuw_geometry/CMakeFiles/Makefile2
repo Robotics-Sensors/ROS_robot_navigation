@@ -101,7 +101,10 @@ clean: CMakeFiles/tuw_geometry_wrapper.dir/clean
 
 # All Build rule for target.
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/tuw_geometry.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+CMakeFiles/tuw_geometry.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+CMakeFiles/tuw_geometry.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/tuw_geometry.dir/all: CMakeFiles/roscpp_generate_messages_lisp.dir/all
+CMakeFiles/tuw_geometry.dir/all: CMakeFiles/roscpp_generate_messages_eus.dir/all
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/roscpp_generate_messages_py.dir/all
@@ -109,12 +112,9 @@ CMakeFiles/tuw_geometry.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_cpp.
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
-CMakeFiles/tuw_geometry.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-CMakeFiles/tuw_geometry.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/tuw_geometry.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 CMakeFiles/tuw_geometry.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir/all
-CMakeFiles/tuw_geometry.dir/all: CMakeFiles/roscpp_generate_messages_lisp.dir/all
-CMakeFiles/tuw_geometry.dir/all: CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/tuw_geometry.dir/build.make CMakeFiles/tuw_geometry.dir/depend
 	$(MAKE) -f CMakeFiles/tuw_geometry.dir/build.make CMakeFiles/tuw_geometry.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_geometry/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target tuw_geometry"

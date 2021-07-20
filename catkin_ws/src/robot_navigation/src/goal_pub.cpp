@@ -16,8 +16,8 @@
 #include <boost/algorithm/string.hpp>
 #include <stdexcept>
 
-class GoalManager
-{
+class GoalManager{
+
 private:
   std::vector<robot_navigation::Goal> goalArray;
   std::ifstream csvFile;
@@ -25,19 +25,19 @@ private:
   ros::Publisher goal_pub;
   int counter;
 
-  void parseCsvFile()
-  {
+  void parseCsvFile(){
+
     std::string csvLine;
 
     //Read the line since the header is useless
     std::getline(csvFile, csvLine);
 
     //The all of the following lines and split each line by the commas
-    while (std::getline(csvFile, csvLine))
-    {
+    while (std::getline(csvFile, csvLine)){
+
       //Make sure that the line read is not empty and causes the split function call to cause an error
-      if (!csvLine.empty())
-      {
+      if (!csvLine.empty()){
+
         //seperates the lines by the commas
         std::vector<std::string> data;
         boost::algorithm::split(data, csvLine, boost::is_any_of(","));
@@ -58,8 +58,8 @@ private:
   }
 
 public:
-  GoalManager(ros::NodeHandle n)
-  {
+  GoalManager(ros::NodeHandle n){
+
     //Get file location
     std::string file_location;
     n.getParam(ros::this_node::getName() + "/file_path", file_location);
@@ -68,8 +68,8 @@ public:
     csvFile.open(file_location.c_str());
 
     //Check if the file is valid
-    if (!csvFile)
-    {
+    if (!csvFile){
+
       ROS_ERROR("Unable to open goal file");
       throw std::invalid_argument("Invalid file name");
     }
@@ -81,8 +81,8 @@ public:
     csvFile.close();
 
     //After parsing all of the goals, set the total number of goals inside all of the goal msgs
-    for(int i = 0; i < goalArray.size(); i++)
-    {
+    for(int i = 0; i < goalArray.size(); i++){
+
       goalArray[i].total_goals = goalArray.size();
     }
 
@@ -94,8 +94,8 @@ public:
   }
 
   //Publishes the next goal in the goal array. The goals wrap around to the beginning of the array after the last goal is published
-  void publishNextGoal()
-  {
+  void publishNextGoal(){
+
     //Determine what is the current goal
     int currentGoalIndex = counter % goalArray.size();
 
@@ -108,16 +108,16 @@ public:
   }
 
   //Publishes the first goal in the goal array
-  void publishInitialGoal()
-  {
+  void publishInitialGoal(){
+
     //Publish the goal
     goal_pub.publish(goalArray[0]);
     ROS_INFO("Published initial goal: %s", goalArray[0].description.c_str());
   }
 
   //Resets the counter back to 1
-  void resetGoals()
-  {
+  void resetGoals(){
+
     counter = 1;
     ROS_INFO("Goal publisher order reset to beginning");
   }
@@ -127,26 +127,26 @@ GoalManager *goalManager;
 
 //Service Callbacks
 
-bool newGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res)
-{
+bool newGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res){
+
   goalManager->publishNextGoal();
   return true;
 }
 
-bool initialGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res)
-{
+bool initialGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res){
+
   goalManager->publishInitialGoal();
   return true;
 }
 
-bool resetGoalsCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res)
-{
+bool resetGoalsCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res){
+
   goalManager->resetGoals();
   return true;
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv){
+
   //Create ros node
   ros::init(argc, argv, "goal_publisher");
   ros::NodeHandle n;

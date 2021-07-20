@@ -134,7 +134,6 @@ catkin_package(
     gazebo_msgs
     tuw_voronoi_graph
     tuw_multi_robot_msgs
-    # tf
     cv_bridge
     dynamic_reconfigure
     nav_msgs
@@ -171,6 +170,8 @@ add_executable(mover_node src/mover.cpp)
 add_executable(robot_spawn_publisher src/robot_spawn_publisher.cpp)
 add_executable(obstacle_bot_spawn_publisher src/obstacle_bot_spawn_publisher.cpp)
 add_executable(goal_publisher src/goal_pub.cpp)
+add_executable(robot_goal_publisher src/robot_goal_publisher.cpp)
+add_executable(obstacle_bot_goal_publisher src/obstacle_bot_goal_publisher.cpp)
 add_executable(obstacle_bot_node src/obstacle_bot.cpp)
 add_executable(logger src/logger.cpp)
 add_executable(estop src/estop.cpp)
@@ -186,15 +187,17 @@ add_executable(pose_publisher src/pose_publisher.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(mover_node ${mover_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(robot_spawn_publisher ${robot_spawn_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_spawn_publisher ${obstacle_bot_spawn_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(goal_publisher ${goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_node ${obstacle_bot_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(logger ${logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(estop ${estop_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(dord_calculator ${dord_calculator_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(pose_publisher ${pose_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(mover_node ${${mover_node_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(robot_spawn_publisher ${${robot_spawn_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(obstacle_bot_spawn_publisher ${${obstacle_bot_spawn_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(goal_publisher ${${goal_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(robot_goal_publisher ${${robot_goal_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(obstacle_bot_goal_publisher ${${obstacle_bot_goal_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(obstacle_bot_node ${${obstacle_bot_node_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(logger ${${logger_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(estop ${${estop_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(dord_calculator ${${dord_calculator_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(pose_publisher ${${pose_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
@@ -210,6 +213,12 @@ target_link_libraries(obstacle_bot_spawn_publisher
 ${catkin_LIBRARIES}
 )
 target_link_libraries(goal_publisher
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(robot_goal_publisher
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(obstacle_bot_goal_publisher
   ${catkin_LIBRARIES}
 )
 target_link_libraries(obstacle_bot_node
