@@ -21,7 +21,7 @@ private:
   std::vector<robot_navigation::Goal> robot_goal_array;
   std::ifstream csvFile;
 
-  ros::Publisher robot_goal_publisher;
+  ros::Publisher robot_goal_pub;
   int counter;
 
   float robot_goal_x_position = 0.0;
@@ -29,10 +29,8 @@ private:
   float robot_goal_z_rotation = 0.0;
 
 public:
-  ros::NodeHandle node_handle;
-  robot_goal_publisher() {
+  robot_goal_publisher(ros::NodeHandle node_handle) {
 
-    /* if (robot_goal_x_position == 0.0 && robot_goal_y_position == 0.0 && robot_goal_z_rotation){ */
     //Get file location
     std::string file_location;
     node_handle.getParam(ros::this_node::getName() + "/file_path", file_location);
@@ -79,24 +77,28 @@ public:
 
     //After parsing all of the goals, set the total number of goals inside all of the goal msgs
     for(int i = 0; i < robot_goal_array.size(); i++){
-      robot_goal_array[i].total_goals = goalArray.size();
+      robot_goal_array[i].total_goals = robot_goal_array.size();
     }
 
-    robot_goal_publisher = node_handle.advertise<robot_navigation::Goal>("goal", 1, true);
+    robot_goal_pub = node_handle.advertise<robot_navigation::Goal>("goal", 1, true);
     counter = 1;
   }
+  
+  friend bool newGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res);
+  friend bool initialGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res);
+  friend bool resetGoalsCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res);
 
   //Publishes the next goal in the goal array. The goals wrap around to the beginning of the array after the last goal is published
   void publishNextGoal(){
     int currentGoalIndex = counter % robot_goal_array.size();
-    robot_goal_publisher.publish(robot_goal_array[currentGoalIndex]);
+    robot_goal_pub.publish(robot_goal_array[currentGoalIndex]);
     ROS_INFO("Published goal: %s", robot_goal_array[currentGoalIndex].description.c_str());
     counter++;
   }
 
   //Publishes the first goal in the goal array
   void publishInitialGoal(){
-    robot_goal_publisher.publish(robot_goal_array[0]);
+    robot_goal_pub.publish(robot_goal_array[0]);
     ROS_INFO("Published initial goal: %s", robot_goal_array[0].description.c_str());
   }
 
@@ -105,22 +107,26 @@ public:
     counter = 1;
     ROS_INFO("Goal publisher order reset to beginning");
   }
+
 };
 
 
 //Service Callbacks
-bool newGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res, goal_handler_obj){
-  goal_handler_obj.publishNextGoal();
+bool newGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res){
+  robot_goal_publisher *object;
+  object->publishNextGoal();
   return true;
 }
 
 bool initialGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res){
-  goal_handler_obj.publishInitialGoal();
+  robot_goal_publisher *object;
+  object->publishInitialGoal();
   return true;
 }
 
 bool resetGoalsCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res){
-  goal_handler_obj.resetGoals();
+  robot_goal_publisher *object;
+  object->resetGoals();
   return true;
 }
 
@@ -129,12 +135,14 @@ int main(int argc, char **argv){
 
   //Create ros node
   ros::init(argc, argv, "robot_goal_publisher");
-  robot_goal_publisher goal_handler_obj;
+  ros::NodeHandle node_handle;
+
+  robot_goal_publisher goal_handler_obj(node_handle);
 
   //Create the service callbacks
-  ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", newGoalCallback(goal_manager_obj));
-  ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", initialGoalCallback(goal_manager_obj));
-  ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", resetGoalsCallback(goal_manager_obj));
+  ros::ServiceServer robot_goal_server = node_handle.advertiseService("get_robot_new_goal", newGoalCallback);
+  ros::ServiceServer initial_robot_goal_server = node_handle.advertiseService("get_robot_initial_goal", initialGoalCallback);
+  ros::ServiceServer reset_robot_goal_server = node_handle.advertiseService("reset_robot_goals", resetGoalsCallback);
   ros::spin();
 
   return 0;

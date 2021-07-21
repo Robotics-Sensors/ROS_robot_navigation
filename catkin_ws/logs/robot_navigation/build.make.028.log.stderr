@@ -1,0 +1,56 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:137:3:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kgoal_handler_obj[m[K’
+   [01;31m[Kgoal_handler_obj[m[K = new robot_goal_publisher(node_handle);
+   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:140:42:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle[m[K’ was not declared in this scope
+   ros::ServiceServer robot_goal_server = [01;31m[Knode_handle[m[K.advertiseService("get_robot_new_goal", goal_handler_obj.newGoalCallback);
+                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:140:93:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handler_obj[m[K’ was not declared in this scope
+   ros::ServiceServer robot_goal_server = node_handle.advertiseService("get_robot_new_goal", [01;31m[Kgoal_handler_obj[m[K.newGoalCallback);
+                                                                                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:[m[K In function ‘[01m[Kbool newGoalCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:132:3:[m[K [01;31m[Kerror: [m[K‘[01m[KgoalManager[m[K’ was not declared in this scope
+   [01;31m[KgoalManager[m[K->publishNextGoal();
+   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:132:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KGoalManager[m[K’
+   [01;36m[KgoalManager[m[K->publishNextGoal();
+   [01;36m[K^~~~~~~~~~~[m[K
+   [32m[KGoalManager[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:[m[K In function ‘[01m[Kbool initialGoalCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:138:3:[m[K [01;31m[Kerror: [m[K‘[01m[KgoalManager[m[K’ was not declared in this scope
+   [01;31m[KgoalManager[m[K->publishInitialGoal();
+   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:138:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KGoalManager[m[K’
+   [01;36m[KgoalManager[m[K->publishInitialGoal();
+   [01;36m[K^~~~~~~~~~~[m[K
+   [32m[KGoalManager[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:[m[K In function ‘[01m[Kbool resetGoalsCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:144:3:[m[K [01;31m[Kerror: [m[K‘[01m[KgoalManager[m[K’ was not declared in this scope
+   [01;31m[KgoalManager[m[K->resetGoals();
+   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:144:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KGoalManager[m[K’
+   [01;36m[KgoalManager[m[K->resetGoals();
+   [01;36m[K^~~~~~~~~~~[m[K
+   [32m[KGoalManager[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:155:3:[m[K [01;31m[Kerror: [m[K‘[01m[KgoalManager[m[K’ was not declared in this scope
+   [01;31m[KgoalManager[m[K = new GoalManager(n);
+   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:155:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KGoalManager[m[K’
+   [01;36m[KgoalManager[m[K = new GoalManager(n);
+   [01;36m[K^~~~~~~~~~~[m[K
+   [32m[KGoalManager[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:166:10:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[K<type error>[m[K’ argument given to ‘[01m[Kdelete[m[K’, expected pointer
+   delete [01;31m[KgoalManager[m[K;
+          [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/robot_goal_publisher.dir/all] Error 2
+make[2]: *** [CMakeFiles/goal_publisher.dir/src/goal_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/goal_publisher.dir/all] Error 2
+make: *** [all] Error 2

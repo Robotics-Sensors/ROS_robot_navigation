@@ -1,0 +1,122 @@
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_lisp
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_py
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_cpp
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target gazebo_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target move_base_msgs_generate_messages_nodejs
+[  0%] Built target gazebo_msgs_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target move_base_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target move_base_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target gazebo_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target move_base_msgs_generate_messages_py
+[  0%] Built target gazebo_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target move_base_msgs_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target gazebo_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target _robot_navigation_generate_messages_check_deps_Goal
+[  5%] Built target pose_publisher
+[  5%] Built target _robot_navigation_generate_messages_check_deps_SimLog
+[ 11%] Built target logger
+[ 17%] Built target estop
+[ 23%] Built target obstacle_bot_node
+[ 26%] [32m[1mLinking CXX executable /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher[0m
+[ 32%] Built target goal_publisher
+[ 38%] Built target robot_spawn_publisher
+[ 44%] Built target dord_calculator
+[ 52%] Built target robot_navigation_generate_messages_eus
+[ 58%] Built target obstacle_bot_spawn_publisher
+[ 64%] Built target mover_node
+[ 73%] Built target robot_navigation_generate_messages_py
+[ 79%] Built target robot_navigation_generate_messages_nodejs
+[ 85%] Built target robot_navigation_generate_messages_cpp
+[35m[1mScanning dependencies of target robot_goal_publisher[0m
+[ 91%] Built target robot_navigation_generate_messages_lisp
+[ 94%] [32mBuilding CXX object CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o[0m
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+CMakeFiles/obstacle_bot_goal_publisher.dir/build.make:122: recipe for target '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher' failed
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+CMakeFiles/Makefile2:881: recipe for target 'CMakeFiles/obstacle_bot_goal_publisher.dir/all' failed
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 94%] Built target robot_navigation_generate_messages
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:88:98:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishInitialGoal[m[K’ has not been declared
+   friend bool initialGoalCallback(std_srvs::Empty::Request &req, std_srvs::Empty::Response &res, [01;31m[KpublishInitialGoal[m[K);
+                                                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In function ‘[01m[Kbool initialGoalCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:123:3:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishInitialGoal[m[K’ was not declared in this scope
+   [01;31m[KpublishInitialGoal[m[K();
+   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+CMakeFiles/robot_goal_publisher.dir/build.make:62: recipe for target 'CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o' failed
+CMakeFiles/Makefile2:3898: recipe for target 'CMakeFiles/robot_goal_publisher.dir/all' failed
+make[2]: *** [CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/robot_goal_publisher.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

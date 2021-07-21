@@ -1,0 +1,7 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

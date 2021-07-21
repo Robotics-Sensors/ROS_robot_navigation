@@ -1,0 +1,29 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic bool robot_goal_publisher::newGoalCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:119:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krobot_goal_publisher::robot_goal_publisher()[m[K’
+   robot_goal_publisher [01;31m[Kobject[m[K;
+                        [01;31m[K^~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:32:3:[m[K [01;36m[Knote: [m[Kcandidate: robot_goal_publisher::robot_goal_publisher(ros::NodeHandle)
+   [01;36m[Krobot_goal_publisher[m[K(ros::NodeHandle node_handle) {
+   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:32:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:19:7:[m[K [01;36m[Knote: [m[Kcandidate: robot_goal_publisher::robot_goal_publisher(robot_goal_publisher&&)
+ class [01;36m[Krobot_goal_publisher[m[K{
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:19:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic bool robot_goal_publisher::initialGoalCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:125:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+   [01;31m[Kthis[m[K->publishInitialGoal();
+   [01;31m[K^~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic bool robot_goal_publisher::resetGoalsCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:130:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+   [01;31m[Kthis[m[K->resetGoals();
+   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/robot_goal_publisher.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,350 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic void robot_goal_publisher::publishNextGoal()[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:90:28:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::counter[m[K’ in static member function
+     int currentGoalIndex = [01;31m[Kcounter[m[K % robot_goal_array.size();
+                            [01;31m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:25:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   int [01;36m[Kcounter[m[K;
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:90:38:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::robot_goal_array[m[K’ in static member function
+     int currentGoalIndex = counter % [01;31m[Krobot_goal_array[m[K.size();
+                                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:21:39:[m[K [01;36m[Knote: [m[Kdeclared here
+   std::vector<robot_navigation::Goal> [01;36m[Krobot_goal_array[m[K;
+                                       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:91:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::robot_goal_pub[m[K’ in static member function
+     [01;31m[Krobot_goal_pub[m[K.publish(robot_goal_array[currentGoalIndex]);
+     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:24:18:[m[K [01;36m[Knote: [m[Kdeclared here
+   ros::Publisher [01;36m[Krobot_goal_pub[m[K;
+                  [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:91:28:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::robot_goal_array[m[K’ in static member function
+     robot_goal_pub.publish([01;31m[Krobot_goal_array[m[K[currentGoalIndex]);
+                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:21:39:[m[K [01;36m[Knote: [m[Kdeclared here
+   std::vector<robot_navigation::Goal> [01;36m[Krobot_goal_array[m[K;
+                                       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:92:36:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::robot_goal_array[m[K’ in static member function
+     ROS_INFO("Published goal: %s", [01;31m[Kr[m[Kobot_goal_array[currentGoalIndex].description.c_str());
+                                    [01;31m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:348:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:92:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+     [01;36m[KR[m[KOS_INFO("Published goal: %s", robot_goal_array[currentGoalIndex].description.c_str());
+     [01;36m[K^[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:21:39:[m[K [01;36m[Knote: [m[Kdeclared here
+   std::vector<robot_navigation::Goal> [01;36m[Krobot_goal_array[m[K;
+                                       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:93:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::counter[m[K’ in static member function
+     [01;31m[Kcounter[m[K++;
+     [01;31m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:25:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   int [01;36m[Kcounter[m[K;
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic void robot_goal_publisher::publishInitialGoal()[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:98:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::robot_goal_pub[m[K’ in static member function
+     [01;31m[Krobot_goal_pub[m[K.publish(robot_goal_array[0]);
+     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:24:18:[m[K [01;36m[Knote: [m[Kdeclared here
+   ros::Publisher [01;36m[Krobot_goal_pub[m[K;
+                  [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:98:28:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::robot_goal_array[m[K’ in static member function
+     robot_goal_pub.publish([01;31m[Krobot_goal_array[m[K[0]);
+                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:21:39:[m[K [01;36m[Knote: [m[Kdeclared here
+   std::vector<robot_navigation::Goal> [01;36m[Krobot_goal_array[m[K;
+                                       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:99:44:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::robot_goal_array[m[K’ in static member function
+     ROS_INFO("Published initial goal: %s", [01;31m[Kr[m[Kobot_goal_array[0].description.c_str());
+                                            [01;31m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:348:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:99:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+     [01;36m[KR[m[KOS_INFO("Published initial goal: %s", robot_goal_array[0].description.c_str());
+     [01;36m[K^[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:21:39:[m[K [01;36m[Knote: [m[Kdeclared here
+   std::vector<robot_navigation::Goal> [01;36m[Krobot_goal_array[m[K;
+                                       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic void robot_goal_publisher::resetGoals()[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:104:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Krobot_goal_publisher::counter[m[K’ in static member function
+     [01;31m[Kcounter[m[K = 1;
+     [01;31m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:25:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   int [01;36m[Kcounter[m[K;
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertiseService(const char [19], void (&)())[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;31m[K)[m[K;
+                                                                                                                                              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), T*)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), T *obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), T*)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), T *obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), const boost::shared_ptr<X>&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), const boost::shared_ptr<T>& obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), const boost::shared_ptr<X>&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), const boost::shared_ptr<T>& obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(MReq&, MRes&))
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(MReq&, MRes&))
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool[m[K’ and ‘[01m[Kvoid[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(ros::ServiceEvent<MReq, MRes>&))
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(ServiceEvent<MReq, MRes>&))
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool[m[K’ and ‘[01m[Kvoid[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(MReq&, MRes&)>&, const VoidConstPtr&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(MReq&, MRes&)>& callback,
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(MReq&, MRes&)>[m[K’ and ‘[01m[Kvoid()[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class S> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(S&)>&, const VoidConstPtr&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(S&)>& callback,
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:134:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(S&)>[m[K’ and ‘[01m[Kvoid()[m[K’
+   ros::ServiceServer robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.publishNextGoal[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[Kcandidate: ros::ServiceServer ros::NodeHandle::advertiseService(ros::AdvertiseServiceOptions&)
+   ServiceServer [01;36m[KadvertiseService[m[K(AdvertiseServiceOptions& ops);
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertiseService(const char [23], void (&)())[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;31m[K)[m[K;
+                                                                                                                                                             [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), T*)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), T *obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), T*)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), T *obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), const boost::shared_ptr<X>&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), const boost::shared_ptr<T>& obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), const boost::shared_ptr<X>&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), const boost::shared_ptr<T>& obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(MReq&, MRes&))
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(MReq&, MRes&))
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool[m[K’ and ‘[01m[Kvoid[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(ros::ServiceEvent<MReq, MRes>&))
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(ServiceEvent<MReq, MRes>&))
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool[m[K’ and ‘[01m[Kvoid[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(MReq&, MRes&)>&, const VoidConstPtr&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(MReq&, MRes&)>& callback,
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(MReq&, MRes&)>[m[K’ and ‘[01m[Kvoid()[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class S> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(S&)>&, const VoidConstPtr&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(S&)>& callback,
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:135:157:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(S&)>[m[K’ and ‘[01m[Kvoid()[m[K’
+   ros::ServiceServer initial_robot_goal_server = goal_handler_obj.node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.publishInitialGoal[01;36m[K)[m[K;
+                                                                                                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[Kcandidate: ros::ServiceServer ros::NodeHandle::advertiseService(ros::AdvertiseServiceOptions&)
+   ServiceServer [01;36m[KadvertiseService[m[K(AdvertiseServiceOptions& ops);
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertiseService(const char [18], void (&)())[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;31m[K)[m[K;
+                                                                                                                                              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), T*)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), T *obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), T*)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), T *obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), const boost::shared_ptr<X>&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), const boost::shared_ptr<T>& obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), const boost::shared_ptr<X>&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), const boost::shared_ptr<T>& obj)
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kvoid (*)()[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(MReq&, MRes&))
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(MReq&, MRes&))
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool[m[K’ and ‘[01m[Kvoid[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(ros::ServiceEvent<MReq, MRes>&))
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(ServiceEvent<MReq, MRes>&))
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool[m[K’ and ‘[01m[Kvoid[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(MReq&, MRes&)>&, const VoidConstPtr&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(MReq&, MRes&)>& callback,
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(MReq&, MRes&)>[m[K’ and ‘[01m[Kvoid()[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class S> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(S&)>&, const VoidConstPtr&)
+   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(S&)>& callback,
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:136:142:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(S&)>[m[K’ and ‘[01m[Kvoid()[m[K’
+   ros::ServiceServer reset_robot_goal_server = goal_handler_obj.node_handle.advertiseService("reset_robot_goals", goal_handler_obj.resetGoals[01;36m[K)[m[K;
+                                                                                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[Kcandidate: ros::ServiceServer ros::NodeHandle::advertiseService(ros::AdvertiseServiceOptions&)
+   ServiceServer [01;36m[KadvertiseService[m[K(AdvertiseServiceOptions& ops);
+                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+make[2]: *** [CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/robot_goal_publisher.dir/all] Error 2
+make: *** [all] Error 2

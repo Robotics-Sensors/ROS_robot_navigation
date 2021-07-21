@@ -1,0 +1,5 @@
+[ 22%] Built target FakePoseEstimationNodelet
+[ 22%] Built target tuw_multi_robot_msgs_generate_messages_cpp
+[ 55%] Built target tuw_multi_robot_ctrl
+[ 77%] Built target local_multi_robot_controller
+[100%] Built target tuw_velocity_controller

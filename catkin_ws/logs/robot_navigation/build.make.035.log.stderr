@@ -1,0 +1,21 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic bool robot_goal_publisher::newGoalCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:115:19:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid robot_goal_publisher::publishNextGoal()[m[K’ without object
+   publishNextGoal([01;31m[K)[m[K;
+                   [01;31m[K^[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic bool robot_goal_publisher::initialGoalCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:120:22:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid robot_goal_publisher::publishInitialGoal()[m[K’ without object
+   publishInitialGoal([01;31m[K)[m[K;
+                      [01;31m[K^[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In static member function ‘[01m[Kstatic bool robot_goal_publisher::resetGoalsCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:125:14:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid robot_goal_publisher::resetGoals()[m[K’ without object
+   resetGoals([01;31m[K)[m[K;
+              [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/robot_goal_publisher.dir/all] Error 2
+make: *** [all] Error 2

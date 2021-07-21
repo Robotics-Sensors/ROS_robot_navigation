@@ -1,0 +1,130 @@
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_py
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_lisp
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_eus
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target tuw_multi_robot_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target gazebo_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target gazebo_msgs_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target move_base_msgs_generate_messages_nodejs
+[  0%] Built target move_base_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target move_base_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target gazebo_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target move_base_msgs_generate_messages_py
+[  0%] Built target gazebo_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target move_base_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target gazebo_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target _robot_navigation_generate_messages_check_deps_Goal
+[  5%] Built target logger
+[ 11%] Built target estop
+[ 17%] Built target dord_calculator
+[ 17%] Built target _robot_navigation_generate_messages_check_deps_SimLog
+[ 23%] Built target pose_publisher
+[ 29%] Built target goal_publisher
+[ 32%] [32m[1mLinking CXX executable /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher[0m
+[ 38%] Built target obstacle_bot_node
+[ 44%] Built target robot_spawn_publisher
+[35m[1mScanning dependencies of target robot_goal_publisher[0m
+[ 50%] Built target obstacle_bot_spawn_publisher
+[ 55%] Built target mover_node
+[ 64%] Built target robot_navigation_generate_messages_eus
+[ 70%] Built target robot_navigation_generate_messages_nodejs
+[ 73%] [32mBuilding CXX object CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o[0m
+[ 79%] Built target robot_navigation_generate_messages_cpp
+[ 88%] Built target robot_navigation_generate_messages_py
+[ 94%] Built target robot_navigation_generate_messages_lisp
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+CMakeFiles/obstacle_bot_goal_publisher.dir/build.make:122: recipe for target '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher' failed
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+CMakeFiles/Makefile2:881: recipe for target 'CMakeFiles/obstacle_bot_goal_publisher.dir/all' failed
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 94%] Built target robot_navigation_generate_messages
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In function ‘[01m[Kbool resetGoalsCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:128:3:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   [01;31m[Kthis[m[K->resetGoals();
+   [01;31m[K^~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:143:110:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robot_goal_publisher[m[K’ has no member named ‘[01m[KnewGoalCallback[m[K’
+   ros::ServiceServer robot_goal_server = node_handle.advertiseService("get_robot_new_goal", goal_handler_obj.[01;31m[KnewGoalCallback[m[K);
+                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:144:122:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robot_goal_publisher[m[K’ has no member named ‘[01m[KinitialGoalCallback[m[K’
+   ros::ServiceServer initial_robot_goal_server = node_handle.advertiseService("get_robot_initial_goal", goal_handler_obj.[01;31m[KinitialGoalCallback[m[K(goal_handler_obj));
+                                                                                                                          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:145:115:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robot_goal_publisher[m[K’ has no member named ‘[01m[KresetGoalsCallback[m[K’; did you mean ‘[01m[KresetGoals[m[K’?
+   ros::ServiceServer reset_robot_goal_server = node_handle.advertiseService("reset_robot_goals", goal_handler_obj.[01;31m[KresetGoalsCallback[m[K);
+                                                                                                                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+                                                                                                                   [32m[KresetGoals[m[K
+CMakeFiles/robot_goal_publisher.dir/build.make:62: recipe for target 'CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o' failed
+make[2]: *** [CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/robot_goal_publisher.dir/all] Error 2
+CMakeFiles/Makefile2:3898: recipe for target 'CMakeFiles/robot_goal_publisher.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
