@@ -187,17 +187,17 @@ add_executable(pose_publisher src/pose_publisher.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(mover_node ${${mover_node_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(robot_spawn_publisher ${${robot_spawn_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_spawn_publisher ${${obstacle_bot_spawn_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(goal_publisher ${${goal_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(robot_goal_publisher ${${robot_goal_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_goal_publisher ${${obstacle_bot_goal_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_node ${${obstacle_bot_node_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(logger ${${logger_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(estop ${${estop_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(dord_calculator ${${dord_calculator_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
-add_dependencies(pose_publisher ${${pose_publisher_EXPORTED_TARGETS}} ${catkin_EXPORTED_TARGETS})
+add_dependencies(mover_node ${${mover_node}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(robot_spawn_publisher ${${robot_spawn_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(obstacle_bot_spawn_publisher ${${obstacle_bot_spawn_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(goal_publisher ${${goal_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(robot_goal_publisher ${${robot_goal_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(obstacle_bot_goal_publisher ${${obstacle_bot_goal_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(obstacle_bot_node ${${obstacle_bot_node}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(logger ${${logger}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(estop ${${estop}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(dord_calculator ${${dord_calculator}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(pose_publisher ${${pose_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node

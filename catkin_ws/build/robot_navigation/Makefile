@@ -259,6 +259,19 @@ robot_navigation_genpy/fast:
 .PHONY : robot_navigation_genpy/fast
 
 #=============================================================================
+# Target rules for targets named obstacle_bot_goal_publisher
+
+# Build rule for target.
+obstacle_bot_goal_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 obstacle_bot_goal_publisher
+.PHONY : obstacle_bot_goal_publisher
+
+# fast build rule for target.
+obstacle_bot_goal_publisher/fast:
+	$(MAKE) -f CMakeFiles/obstacle_bot_goal_publisher.dir/build.make CMakeFiles/obstacle_bot_goal_publisher.dir/build
+.PHONY : obstacle_bot_goal_publisher/fast
+
+#=============================================================================
 # Target rules for targets named robot_navigation_generate_messages_py
 
 # Build rule for target.
@@ -1325,6 +1338,19 @@ trajectory_msgs_generate_messages_nodejs/fast:
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named robot_goal_publisher
+
+# Build rule for target.
+robot_goal_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_goal_publisher
+.PHONY : robot_goal_publisher
+
+# fast build rule for target.
+robot_goal_publisher/fast:
+	$(MAKE) -f CMakeFiles/robot_goal_publisher.dir/build.make CMakeFiles/robot_goal_publisher.dir/build
+.PHONY : robot_goal_publisher/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1785,6 +1811,33 @@ src/obstacle_bot.cpp.s:
 	$(MAKE) -f CMakeFiles/obstacle_bot_node.dir/build.make CMakeFiles/obstacle_bot_node.dir/src/obstacle_bot.cpp.s
 .PHONY : src/obstacle_bot.cpp.s
 
+src/obstacle_bot_goal_publisher.o: src/obstacle_bot_goal_publisher.cpp.o
+
+.PHONY : src/obstacle_bot_goal_publisher.o
+
+# target to build an object file
+src/obstacle_bot_goal_publisher.cpp.o:
+	$(MAKE) -f CMakeFiles/obstacle_bot_goal_publisher.dir/build.make CMakeFiles/obstacle_bot_goal_publisher.dir/src/obstacle_bot_goal_publisher.cpp.o
+.PHONY : src/obstacle_bot_goal_publisher.cpp.o
+
+src/obstacle_bot_goal_publisher.i: src/obstacle_bot_goal_publisher.cpp.i
+
+.PHONY : src/obstacle_bot_goal_publisher.i
+
+# target to preprocess a source file
+src/obstacle_bot_goal_publisher.cpp.i:
+	$(MAKE) -f CMakeFiles/obstacle_bot_goal_publisher.dir/build.make CMakeFiles/obstacle_bot_goal_publisher.dir/src/obstacle_bot_goal_publisher.cpp.i
+.PHONY : src/obstacle_bot_goal_publisher.cpp.i
+
+src/obstacle_bot_goal_publisher.s: src/obstacle_bot_goal_publisher.cpp.s
+
+.PHONY : src/obstacle_bot_goal_publisher.s
+
+# target to generate assembly for a file
+src/obstacle_bot_goal_publisher.cpp.s:
+	$(MAKE) -f CMakeFiles/obstacle_bot_goal_publisher.dir/build.make CMakeFiles/obstacle_bot_goal_publisher.dir/src/obstacle_bot_goal_publisher.cpp.s
+.PHONY : src/obstacle_bot_goal_publisher.cpp.s
+
 src/obstacle_bot_spawn_publisher.o: src/obstacle_bot_spawn_publisher.cpp.o
 
 .PHONY : src/obstacle_bot_spawn_publisher.o
@@ -1839,6 +1892,33 @@ src/pose_publisher.cpp.s:
 	$(MAKE) -f CMakeFiles/pose_publisher.dir/build.make CMakeFiles/pose_publisher.dir/src/pose_publisher.cpp.s
 .PHONY : src/pose_publisher.cpp.s
 
+src/robot_goal_publisher.o: src/robot_goal_publisher.cpp.o
+
+.PHONY : src/robot_goal_publisher.o
+
+# target to build an object file
+src/robot_goal_publisher.cpp.o:
+	$(MAKE) -f CMakeFiles/robot_goal_publisher.dir/build.make CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o
+.PHONY : src/robot_goal_publisher.cpp.o
+
+src/robot_goal_publisher.i: src/robot_goal_publisher.cpp.i
+
+.PHONY : src/robot_goal_publisher.i
+
+# target to preprocess a source file
+src/robot_goal_publisher.cpp.i:
+	$(MAKE) -f CMakeFiles/robot_goal_publisher.dir/build.make CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.i
+.PHONY : src/robot_goal_publisher.cpp.i
+
+src/robot_goal_publisher.s: src/robot_goal_publisher.cpp.s
+
+.PHONY : src/robot_goal_publisher.s
+
+# target to generate assembly for a file
+src/robot_goal_publisher.cpp.s:
+	$(MAKE) -f CMakeFiles/robot_goal_publisher.dir/build.make CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.s
+.PHONY : src/robot_goal_publisher.cpp.s
+
 src/robot_spawn_publisher.o: src/robot_spawn_publisher.cpp.o
 
 .PHONY : src/robot_spawn_publisher.o
@@ -1883,6 +1963,7 @@ help:
 	@echo "... goal_publisher"
 	@echo "... robot_spawn_publisher"
 	@echo "... robot_navigation_genpy"
+	@echo "... obstacle_bot_goal_publisher"
 	@echo "... robot_navigation_generate_messages_py"
 	@echo "... dord_calculator"
 	@echo "... robot_navigation_geneus"
@@ -1968,6 +2049,7 @@ help:
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... robot_goal_publisher"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -2009,12 +2091,18 @@ help:
 	@echo "... src/obstacle_bot.o"
 	@echo "... src/obstacle_bot.i"
 	@echo "... src/obstacle_bot.s"
+	@echo "... src/obstacle_bot_goal_publisher.o"
+	@echo "... src/obstacle_bot_goal_publisher.i"
+	@echo "... src/obstacle_bot_goal_publisher.s"
 	@echo "... src/obstacle_bot_spawn_publisher.o"
 	@echo "... src/obstacle_bot_spawn_publisher.i"
 	@echo "... src/obstacle_bot_spawn_publisher.s"
 	@echo "... src/pose_publisher.o"
 	@echo "... src/pose_publisher.i"
 	@echo "... src/pose_publisher.s"
+	@echo "... src/robot_goal_publisher.o"
+	@echo "... src/robot_goal_publisher.i"
+	@echo "... src/robot_goal_publisher.s"
 	@echo "... src/robot_spawn_publisher.o"
 	@echo "... src/robot_spawn_publisher.i"
 	@echo "... src/robot_spawn_publisher.s"

@@ -5,5 +5,5 @@ Wrote header file in /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localizat
 [ 42%] Built target tuw_gazebo_ros_diff_drive
 [ 57%] Built target tuw_gazebo_ros_imu9dof
 [ 71%] Built target tuw_gazebo_ros_door_plugin
-[ 85%] Built target tuw_gazebo_plugins_gencfg
-[100%] Built target tuw_gazebo_ros_bridge_model
+[ 85%] Built target tuw_gazebo_ros_bridge_model
+[100%] Built target tuw_gazebo_plugins_gencfg

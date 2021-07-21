@@ -9,6 +9,7 @@
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/goal_publisher.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/robot_spawn_publisher.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/robot_navigation_genpy.dir
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/obstacle_bot_goal_publisher.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/robot_navigation_generate_messages_py.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/dord_calculator.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/robot_navigation_geneus.dir
@@ -94,6 +95,7 @@
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir
+/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/robot_goal_publisher.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/sensor_msgs_generate_messages_eus.dir
 /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/robot_navigation/CMakeFiles/sensor_msgs_generate_messages_py.dir

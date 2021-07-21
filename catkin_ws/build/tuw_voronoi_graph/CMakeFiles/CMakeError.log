@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_51e60/fast"
-/usr/bin/make -f CMakeFiles/cmTC_51e60.dir/build.make CMakeFiles/cmTC_51e60.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_343d0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_343d0.dir/build.make CMakeFiles/cmTC_343d0.dir/build
 make[1]: Entering directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_51e60.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_51e60.dir/CheckSymbolExists.c.o   -c /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_51e60
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51e60.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_51e60.dir/CheckSymbolExists.c.o  -o cmTC_51e60 
-CMakeFiles/cmTC_51e60.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_343d0.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_343d0.dir/CheckSymbolExists.c.o   -c /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_343d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_343d0.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_343d0.dir/CheckSymbolExists.c.o  -o cmTC_343d0 
+CMakeFiles/cmTC_343d0.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_51e60.dir/build.make:97: recipe for target 'cmTC_51e60' failed
-make[1]: *** [cmTC_51e60] Error 1
+CMakeFiles/cmTC_343d0.dir/build.make:97: recipe for target 'cmTC_343d0' failed
+make[1]: *** [cmTC_343d0] Error 1
 make[1]: Leaving directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_51e60/fast' failed
-make: *** [cmTC_51e60/fast] Error 2
+Makefile:126: recipe for target 'cmTC_343d0/fast' failed
+make: *** [cmTC_343d0/fast] Error 2
 
 File /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_611ac/fast"
-/usr/bin/make -f CMakeFiles/cmTC_611ac.dir/build.make CMakeFiles/cmTC_611ac.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_088fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_088fe.dir/build.make CMakeFiles/cmTC_088fe.dir/build
 make[1]: Entering directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_611ac.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_611ac.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_611ac
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_611ac.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_611ac.dir/CheckFunctionExists.c.o  -o cmTC_611ac -lpthreads 
+Building C object CMakeFiles/cmTC_088fe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_088fe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_088fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_088fe.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_088fe.dir/CheckFunctionExists.c.o  -o cmTC_088fe -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_611ac.dir/build.make:97: recipe for target 'cmTC_611ac' failed
-make[1]: *** [cmTC_611ac] Error 1
+CMakeFiles/cmTC_088fe.dir/build.make:97: recipe for target 'cmTC_088fe' failed
+make[1]: *** [cmTC_088fe] Error 1
 make[1]: Leaving directory '/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/build/tuw_voronoi_graph/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_611ac/fast' failed
-make: *** [cmTC_611ac/fast] Error 2
+Makefile:126: recipe for target 'cmTC_088fe/fast' failed
+make: *** [cmTC_088fe/fast] Error 2
 
 

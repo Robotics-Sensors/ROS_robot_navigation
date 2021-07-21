@@ -1,0 +1,43 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/devel/.private/robot_navigation/lib/robot_navigation/obstacle_bot_goal_publisher] Error 1
+make[1]: *** [CMakeFiles/obstacle_bot_goal_publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/logger.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Krobot_navigation/Goal.h: No such file or directory
+ #include [01;31m[K<robot_navigation/Goal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/logger.dir/src/logger.cpp.o] Error 1
+make[1]: *** [CMakeFiles/logger.dir/all] Error 2
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/robot_goal_publisher.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Krobot_navigation/Goal.h: No such file or directory
+ #include [01;31m[K<robot_navigation/Goal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/robot_goal_publisher.dir/src/robot_goal_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/robot_goal_publisher.dir/all] Error 2
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/goal_pub.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Krobot_navigation/Goal.h: No such file or directory
+ #include [01;31m[K<robot_navigation/Goal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/dord_calculator.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Krobot_navigation/Goal.h: No such file or directory
+ #include [01;31m[K<robot_navigation/Goal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/goal_publisher.dir/src/goal_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/goal_publisher.dir/all] Error 2
+make[2]: *** [CMakeFiles/dord_calculator.dir/src/dord_calculator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/dord_calculator.dir/all] Error 2
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/obstacle_bot.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Krobot_navigation/Goal.h: No such file or directory
+ #include [01;31m[K<robot_navigation/Goal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/obstacle_bot_node.dir/src/obstacle_bot.cpp.o] Error 1
+make[1]: *** [CMakeFiles/obstacle_bot_node.dir/all] Error 2
+[01m[K/home/csrobot/Desktop/NERVE_CENTER/ROS_navigation_localization/catkin_ws/src/robot_navigation/src/mover.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Krobot_navigation/Goal.h: No such file or directory
+ #include [01;31m[K<robot_navigation/Goal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/mover_node.dir/src/mover.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mover_node.dir/all] Error 2
+make: *** [all] Error 2
