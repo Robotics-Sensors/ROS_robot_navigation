@@ -1,0 +1,72 @@
+<!-- Assumes Gazebo is already running -->
+<launch>
+  <!-- This launch file includes all the nodes needed to setup a simulated pioneer for navigation -->
+
+  <!-- Settings (Robot position args are overidden by spawn_world.launch)-->
+  <!-- Rotation in radians. -->
+  <arg name="level" default="level4" />
+  <arg name="navigate" default="true" />
+  <arg name="3d" default="false" />
+  <arg name="static_map" default="true" />
+  <arg name="robot" default="pioneer" />
+  <arg name="namespace" default="pioneer" />
+
+  <!-- Robot topics and links-->
+  <arg name="laser_topic" value="frontscan_filtered" />
+  <arg name="pointcloud_topic" value="kinect/depth/points" />
+  <arg name="cmd_vel_topic" value="cmd_vel" />
+  <arg name="odom_topic" value="odom" />
+  <arg name="odom_link" value="odom"/>
+  <arg name="base_link" value="base_link" />
+
+  <!-- Name for each navigation stack-->
+  <arg name="naming" default="" />
+
+
+  <!-- Laser filter to remove infinite values from the front facing laser -->
+  <!-- http://wiki.ros.org/laser_filters -->
+  <node name="$(arg robot)_laser_filter" pkg="laser_filters" type="scan_to_scan_filter_chain" ns="$(arg robot)">
+    <rosparam command="load" file="$(find robot_navigation)/resources/config/pioneer/laserfilter_config.yaml" />
+    <remap from="scan" to="frontscan" />
+    <remap from="scan_filtered" to="frontscan_filtered" />
+  </node>
+
+  <!-- Start Kinect to Laser Converter -->
+  <include file="$(find robot_navigation)/launch/navigation/pcl_to_laser.launch">
+    <arg name="robot" value="$(arg robot)" />
+    <arg name="pointcloud_topic" value="$(arg pointcloud_topic)_filtered" />
+  </include>
+
+  <!-- Start pointcloud filter-->
+  <include file="$(find robot_navigation)/launch/navigation/pointcloud_filter.launch">
+      <arg name="input_cloud" value="$(arg pointcloud_topic)" />
+      <arg name="output_cloud" value="$(arg pointcloud_topic)_filtered" />
+      <arg name="naming" value="$(arg robot)" />
+  </include>
+
+  <!-- Start pose publisher -->
+  <include file="$(find robot_navigation)/launch/navigation/pose_publisher.launch">
+    <arg name="base_link" value="$(arg base_link)" />
+    <arg name="naming" value="$(arg robot)" />
+  </include>
+
+
+  <!-- Setup nav stack-->
+  <!-- With the first navigation stack -->
+  <include file="$(find robot_navigation)/launch/navigation/robot1_navigation_2d/setup_navigation_robot1.launch">
+    <arg name="robot" value="$(arg robot)"/>
+    <arg name="namespace" value="$(arg namespace)" />
+    <arg name="level" value="$(arg level)" />
+    <arg name="static_map" value="$(arg static_map)" />
+    <arg name="navigate" value="$(arg navigate)" />
+    <arg name="3d" value="$(arg 3d)" />
+    <arg name="laser_topic" value="$(arg laser_topic)" />
+    <arg name="pointcloud_topic" value="$(arg pointcloud_topic)_filtered" />
+    <arg name="cmd_vel_topic" value="$(arg cmd_vel_topic)" />
+    <arg name="odom_topic" value="$(arg odom_topic)" />
+    <arg name="odom_link" value="$(arg odom_link)"/>
+    <arg name="base_link" value="$(arg base_link)" />
+    <arg name="naming" value="$(arg robot)" />
+  </include>
+
+</launch>

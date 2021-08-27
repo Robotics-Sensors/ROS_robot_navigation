@@ -1,0 +1,10 @@
+<launch>
+  
+  <arg name="world_name" default="level4" />
+  <arg name="obstacle_bot_name" default="obstacle_bot" />
+
+  <node name="obstacle_bot_spawn_publisher" pkg="robot_navigation" type="obstacle_bot_spawn_publisher">
+    <param name="file_path" value="$(find robot_navigation)/starting_position/$(arg world_name)/$(arg obstacle_bot_name)_starting_position.csv"/>
+  </node>
+</launch>
+

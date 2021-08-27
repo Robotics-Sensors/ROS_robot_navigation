@@ -1,0 +1,5 @@
+
+<launch>
+	<arg name="room" default="level1"/>
+  	<node pkg="stage_ros" type="stageros" name="stageros" args="$(find robot_navigation)/resources/static_maps/2d/$(arg room).world" output="screen"/>
+</launch>

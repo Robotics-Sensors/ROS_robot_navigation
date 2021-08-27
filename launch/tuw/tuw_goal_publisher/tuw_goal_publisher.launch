@@ -1,0 +1,18 @@
+<launch>
+  
+    <arg name="room" default="level4" />      
+    <arg name="file" default="testing_goals.csv" />
+    <arg name="run_once" default="true" />   
+    <arg name="loop_rate" default="1.0" />
+
+    <!-- later on change it so that it accorperates all robots in the goal folder-->
+    <arg name="robot" default="robot1" />   
+    
+    <!-- This node only reads the dxf and stores it a graph in a folder structrue usabe by the graph_generator -->
+    <node pkg="navigation_stack" type="tuw_goal_publisher" name="tuw_goal_publisher">
+        <param name="file_path" value="$(find robot_navigation)/goals/$(arg room)/$(arg file)" />
+        <param name="run_once" value="$(arg run_once)" />
+        <param name="loop_rate" value="$(arg loop_rate)" />
+	  </node>
+
+</launch>

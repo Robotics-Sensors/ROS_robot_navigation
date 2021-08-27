@@ -1,0 +1,5 @@
+Goal Description,X Position,Y Position,Theta
+goal_a,2,2,2
+goal_b,1,1,1
+goal_c,3,3,3
+spawn_position,4,4,4
