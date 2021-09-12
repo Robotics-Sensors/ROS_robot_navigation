@@ -26,7 +26,7 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   dynamic_reconfigure
   tf
-  vigir_cloud_to_planar_scan
+  # vigir_cloud_to_planar_scan
 )
 
 # For python setup of nodes 
@@ -149,7 +149,7 @@ catkin_package(
   dynamic_reconfigure
   nav_msgs
   tf
-  vigir_cloud_to_planar_scan
+  # vigir_cloud_to_planar_scan
 #  DEPENDS system_lib
 )
 
@@ -193,7 +193,7 @@ add_executable(obstacle_bot_logger src/robot_logger/obstacle_bot_logger.cpp)
 add_executable(estop src/utilities/estop.cpp)
 add_executable(dord_calculator src/utilities/dord_calculator.cpp)
 add_executable(pose_publisher src/utilities/pose_publisher.cpp)
-add_executable(tuw_goal_publisher src/tuw/tuw_goal_publisher.cpp)
+add_executable(tuw_goal_publisher src/tuw_robot_goals/tuw_goal_publisher.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
