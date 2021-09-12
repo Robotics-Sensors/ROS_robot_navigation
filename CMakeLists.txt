@@ -180,16 +180,16 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/robot_navigation_node.cpp)
 
 add_executable(robot_mover src/robot_mover/robot_mover.cpp)
-add_executable(robot2_mover src/robot_mover/robot2_mover.cpp)
-add_executable(obstacle_bot_mover src/robot_mover/obstacle_bot_mover.cpp)
+# add_executable(robot2_mover src/robot_mover/robot2_mover.cpp)
+# add_executable(obstacle_bot_mover src/robot_mover/obstacle_bot_mover.cpp)
 add_executable(robot_spawn_publisher src/robot_spawn/robot_spawn_publisher.cpp)
-add_executable(obstacle_bot_spawn_publisher src/robot_spawn/obstacle_bot_spawn_publisher.cpp)
+# add_executable(obstacle_bot_spawn_publisher src/robot_spawn/obstacle_bot_spawn_publisher.cpp)
 add_executable(robot_goal_publisher src/robot_goals/robot_goal_publisher.cpp)
-add_executable(robot2_goal_publisher src/robot_goals/robot2_goal_publisher.cpp)
-add_executable(obstacle_bot_goal_publisher src/robot_goals/obstacle_bot_goal_publisher.cpp)
+# add_executable(robot2_goal_publisher src/robot_goals/robot2_goal_publisher.cpp)
+# add_executable(obstacle_bot_goal_publisher src/robot_goals/obstacle_bot_goal_publisher.cpp)
 add_executable(robot1_logger src/robot_logger/robot1_logger.cpp)
-add_executable(robot2_logger src/robot_logger/robot2_logger.cpp)
-add_executable(obstacle_bot_logger src/robot_logger/obstacle_bot_logger.cpp)
+# add_executable(robot2_logger src/robot_logger/robot2_logger.cpp)
+# add_executable(obstacle_bot_logger src/robot_logger/obstacle_bot_logger.cpp)
 add_executable(estop src/utilities/estop.cpp)
 add_executable(dord_calculator src/utilities/dord_calculator.cpp)
 add_executable(pose_publisher src/utilities/pose_publisher.cpp)
@@ -206,16 +206,16 @@ add_executable(tuw_goal_publisher src/tuw_robot_goals/tuw_goal_publisher.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 add_dependencies(robot_mover ${robot_mover_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(robot2_mover ${robot2_mover_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_mover ${obstacle_bot_mover_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(robot2_mover ${robot2_mover_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(obstacle_bot_mover ${obstacle_bot_mover_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(robot_spawn_publisher ${robot_spawn_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_spawn_publisher ${obstacle_bot_spawn_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(obstacle_bot_spawn_publisher ${obstacle_bot_spawn_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(robot_goal_publisher ${robot_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(robot2_goal_publisher ${robot2_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_goal_publisher ${obstacle_bot_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(robot2_goal_publisher ${robot2_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(obstacle_bot_goal_publisher ${obstacle_bot_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(robot1_logger ${robot1_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(robot2_logger ${robot2_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(obstacle_bot_logger ${obstacle_bot_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(robot2_logger ${robot2_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(obstacle_bot_logger ${obstacle_bot_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(estop ${estop_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(dord_calculator ${dord_calculator_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(pose_publisher ${pose_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
@@ -230,36 +230,36 @@ add_dependencies(tuw_goal_publisher ${tuw_goal_publisher_EXPORTED_TARGETS} ${cat
 target_link_libraries(robot_mover
   ${catkin_LIBRARIES}
 )
-target_link_libraries(robot2_mover
-  ${catkin_LIBRARIES}
-)
-target_link_libraries(obstacle_bot_mover
-  ${catkin_LIBRARIES}
-)
+# target_link_libraries(robot2_mover
+#   ${catkin_LIBRARIES}
+# )
+# target_link_libraries(obstacle_bot_mover
+#   ${catkin_LIBRARIES}
+# )
 target_link_libraries(robot_spawn_publisher
 ${catkin_LIBRARIES}
 )
-target_link_libraries(obstacle_bot_spawn_publisher
-${catkin_LIBRARIES}
-)
+# target_link_libraries(obstacle_bot_spawn_publisher
+# ${catkin_LIBRARIES}
+# )
 target_link_libraries(robot_goal_publisher
   ${catkin_LIBRARIES}
 )
-target_link_libraries(robot2_goal_publisher
-  ${catkin_LIBRARIES}
-)
-target_link_libraries(obstacle_bot_goal_publisher
-  ${catkin_LIBRARIES}
-)
+# target_link_libraries(robot2_goal_publisher
+#   ${catkin_LIBRARIES}
+# )
+# target_link_libraries(obstacle_bot_goal_publisher
+#   ${catkin_LIBRARIES}
+# )
 target_link_libraries(robot1_logger
   ${catkin_LIBRARIES}
 )
-target_link_libraries(robot2_logger
-  ${catkin_LIBRARIES}
-)
-target_link_libraries(obstacle_bot_logger
-  ${catkin_LIBRARIES}
-)
+# target_link_libraries(robot2_logger
+#   ${catkin_LIBRARIES}
+# )
+# target_link_libraries(obstacle_bot_logger
+#   ${catkin_LIBRARIES}
+# )
 target_link_libraries(estop
   ${catkin_LIBRARIES}
 )
