@@ -1,8 +1,7 @@
 # ROS robot navigation and localization
-
-## SLAM 
-## Path Planning
+SLAM 
+Path Planning
 
 # Soon to be implemented
-## Machine Learning movement
-## OpenCV and Machine Learning Computer Vision
+Machine Learning movement
+OpenCV and Machine Learning Computer Vision
