@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
     <!-- Save the path for the logs using the current time -->
     <arg name="robot" />
