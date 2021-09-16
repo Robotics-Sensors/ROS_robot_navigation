@@ -289,11 +289,11 @@ target_link_libraries(tuw_goal_publisher
 # )
 
 # Catkin Python Program
-# catkin_install_python(PROGRAMS
-#   scripts/check_node_is_alive.py
-#   scripts/check_node_is_alive_server.py
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+catkin_install_python(PROGRAMS
+  scripts/check_node_is_alive
+  scripts/check_node_is_alive_server
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 
 
