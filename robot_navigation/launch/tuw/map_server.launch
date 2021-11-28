@@ -1,0 +1,5 @@
+<launch>
+    <arg name="room" default="level1" /> 
+
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find robot_navigation)/resources/static_maps/2d/$(arg room).yaml"/>
+</launch>

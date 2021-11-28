@@ -1,3 +1,0 @@
-geometry_msgs/Pose2D goal
-string description
-uint16 total_goals

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+	<rosparam command="load" file="$(find robot_navigation)/resources/server_node/ignore_node.yaml" />
+	<node name="check_node_is_alive_server" type="check_node_is_alive_server" pkg="robot_navigation">
+		<param name="status_prefix" value="node_alive" />
+		<param name="update_rate_hz" value="0.2" />
+	</node>
+</launch>

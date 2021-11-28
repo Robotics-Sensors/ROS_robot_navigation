@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="world_name" default="level4" />
+  <arg name="robot" default="robot1" />
+
+  <node name="robot_spawn_publisher" pkg="robot_navigation" type="robot_spawn_publisher">
+    <param name="file_path" value="$(find robot_navigation)/starting_position/$(arg world_name)/$(arg robot)_starting_position.csv"/>
+  </node>
+</launch>
+

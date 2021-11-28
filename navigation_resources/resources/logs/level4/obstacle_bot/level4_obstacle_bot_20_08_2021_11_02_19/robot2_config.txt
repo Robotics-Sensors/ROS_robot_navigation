@@ -1,0 +1,2 @@
+Max Speed: 0.000000
+Obstacle Marking Distance: 0.000000

@@ -1,9 +1,0 @@
-<launch>
-
-  <arg name="world_name" default="level4" />
-  <arg name="robot" default="robot1" />
-
-  <node name="$(arg robot)_robot_goal_publisher" pkg="robot_navigation" type="robot2_goal_publisher">
-    <param name="file_path" value="$(find robot_navigation)/goals/$(arg world_name)/$(arg robot)_goals.csv"/>
-  </node>
-</launch>
