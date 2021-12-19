@@ -3,7 +3,6 @@ project(robot_navigation)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
-
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -11,11 +10,12 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   roscpp
   std_msgs
+  message_generation
+  message_runtime
   std_srvs
   geometry_msgs
   tf2
   tf2_ros
-  message_generation
   move_base_msgs
   actionlib
   gazebo_msgs
@@ -73,8 +73,8 @@ add_service_files(
 ## Generate messages in the 'msg' folder
 add_message_files(
     FILES
-    SimLog.msg
     Goal.msg
+    SimLog.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -137,7 +137,8 @@ catkin_package(
   std_srvs 
   tf2
   tf2_ros
-  geometry_msgs 
+  geometry_msgs
+  message_generation
   message_runtime 
   move_base_msgs 
   actionlib 
@@ -213,13 +214,13 @@ add_dependencies(robot_spawn_publisher ${${robot_spawn_publisher}_EXPORTED_TARGE
 add_dependencies(robot_goal_publisher ${${robot_goal_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(robot2_goal_publisher ${robot2_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(obstacle_bot_goal_publisher ${obstacle_bot_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(robot1_logger ${robot1_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(robot1_logger ${${robot1_logger}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(robot2_logger ${robot2_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(obstacle_bot_logger ${obstacle_bot_logger_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(estop ${estop_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(dord_calculator ${dord_calculator_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(pose_publisher ${pose_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(tuw_goal_publisher ${tuw_goal_publisher_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(estop ${${estop}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(dord_calculator ${${dord_calculator}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(pose_publisher ${${pose_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(tuw_goal_publisher ${${tuw_goal_publisher}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
 ## Specify libraries to link a library or executable target against
